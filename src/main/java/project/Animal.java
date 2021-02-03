@@ -20,7 +20,7 @@ public abstract class Animal {
     public abstract void reproduce();
 
     public void eat(){
-        System.out.println(name + "eats food to live");
+        System.out.println(name + " eats food to live");
     }
 
     public void sleep(){
@@ -30,7 +30,7 @@ public abstract class Animal {
 
 
     public void breath(){
-        System.out.println(name + "takes in oxygen.");
+        System.out.println(name + " takes in oxygen.");
     }
 
     public abstract void makeNoise();
