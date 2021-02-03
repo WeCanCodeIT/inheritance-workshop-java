@@ -1,6 +1,6 @@
 package project;
 
-public class Robin extends Bird{
+public class Robin extends FlyingBird{
 
 
     public Robin(String name, int age) {

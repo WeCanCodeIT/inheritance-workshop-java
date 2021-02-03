@@ -1,6 +1,5 @@
 package project;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -19,7 +18,8 @@ public class App {
         zooAnimals.add(squirrel);
         Animal rocky = new FlyingSquirrel("Rocky", "grey", 55);
         zooAnimals.add(rocky);
-
+        Animal pepe = new Penguin("Pepe", 5);
+        zooAnimals.add(pepe);
         System.out.println("Welcome to the WeCanCodeIT Zoo!");
 
         System.out.println("We have many different types of animals!");
@@ -44,16 +44,16 @@ public class App {
         System.out.println();
 
         System.out.println("Time to go swim!");
-        for(Animal animal : zooAnimals){
-            if(animal instanceof Fish){
+        for (Animal animal : zooAnimals) {
+            if (animal instanceof Fish) {
                 ((Fish) animal).swim();
             }
         }
         System.out.println();
 
-        System.out.println("Time to fly!");
-        for(Animal flyingAnimal : zooAnimals){
-            if(flyingAnimal instanceof Flyable){
+        System.out.println("Time for flying animals to fly!");
+        for (Animal flyingAnimal : zooAnimals) {
+            if (flyingAnimal instanceof Flyable) {
                 ((Flyable) flyingAnimal).fly();
             }
         }
