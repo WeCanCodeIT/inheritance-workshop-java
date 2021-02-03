@@ -1,9 +1,9 @@
 package project;
 
-public class Carp extends Fish{
+public class Carp extends Fish {
 
-    public Carp(String name, String color, int age) {
-        super(name, color, age, true);
+    public Carp(String name, int age) {
+        super(name, "grey", age, true);
     }
 
     @Override
